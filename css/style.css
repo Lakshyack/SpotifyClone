@@ -37,8 +37,10 @@ width: 25vw;
     padding: 23px;
 } */
 .right{
-width: 75vw;
+position: relative;
+    width: 75vw;
 margin: 16px 0;
+
 }
 
 .logo{
@@ -64,6 +66,7 @@ margin: 16px 0;
     gap: 13px;
     position: absolute;
     bottom: 0;
+    padding: 10px 0;
 }
 .footer a{
     color: grey;
@@ -71,7 +74,7 @@ margin: 16px 0;
 }
 
 .library{
-    min-height: 80vh;
+    min-height: 75vh;
     position: relative;
 }
 .nav{
@@ -81,8 +84,193 @@ margin: 16px 0;
     display: flex;
     justify-content: space-between;
     background-color: #090909;
+    height: 72px;
   
 }
 .header >* {
     padding: 20px;
 }
+
+.spotifyPalylist{
+    padding: 15px 10px;
+
+}
+
+
+
+.spotifyPalylist .card{
+  width: 200px;
+}
+
+.card img{
+    width: 100%;
+  
+    object-fit: contain;
+}
+.card{
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background-color: #252525 ;
+    border-radius: 5px;
+}
+.card > *{
+  padding-top: 5px;
+}
+
+.cardContainer{
+    max-height: 70vh;
+    overflow-y: scroll;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.playButton{
+    position: absolute;
+    background-color: #1ed760;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%; 
+    padding: 10px;
+    right: 15px;
+    top: 165px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+
+
+
+
+/* chat gpt code */
+  
+
+/* for scroll bar  */
+
+/* Scrollbar styling for dark website */
+
+.cardContainer {
+    max-height: 70vh;
+    overflow-y: auto; /* Enable vertical scrollbar */
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+  }
+  
+  /* WebKit (Chrome, Safari, etc.) scrollbar */
+  .cardContainer::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .cardContainer::-webkit-scrollbar-thumb {
+    background-color: #666; /* Color of the thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  .cardContainer::-webkit-scrollbar-track {
+    background-color: #333; /* Background color of the track */
+  }
+  
+  /* Firefox scrollbar */
+  .cardContainer {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #666 #333; /* Color the thumb and track */
+  }
+  
+  .cardContainer::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Hover color of the thumb */
+  }
+  
+  .cardContainer::-webkit-scrollbar-thumb:active {
+    background-color: #444; /* Active (clicked) color of the thumb */
+  }
+  
+
+  /* chat gpt code ended */
+
+
+  .loginBtn{
+    
+    background-color: white;
+    color: #090909;
+    font-weight: bold;
+    border-radius: 23px;
+    padding: 7px 14px;
+    width: 79px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .signupBtn{
+     background-color: #090909;
+     color: rgb(94, 92, 92);
+     /* font-weight: bold; */
+     border: none;
+     outline: none;
+     font-size: 1rem;
+     cursor: pointer;
+  }
+
+  .signupBtn:hover{
+    font-size:17px;
+    color: white;
+    /* padding: 8px 18px; */
+}
+
+.loginBtn:hover{
+    font-size:17px;
+    /* width: 81px; */
+    /* width: 80px; */
+font-weight: bold;
+
+    
+   
+  }
+
+  .buttons > *{
+    margin: 0 12px;
+  }
+
+
+  .playBar{
+    position: absolute;
+    bottom: 12px;
+    background-color: green;
+    width: 92%;
+    padding: 8px;
+  }
+
+
+  .songButtons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .songList ul{
+     padding: 10px 17px;
+  }
+
+  .songList ul li{
+    list-style-type: decimal;
+    font-size: 12px;
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+    padding: 12px 0px;
+  }
+  
+  .playNow{
+    display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  .playNow span{
+    font-size: 15px;
+    width: 64px;
+    padding: 12px;
+  }
