@@ -67,15 +67,20 @@ margin: 16px 0;
     position: absolute;
     bottom: 0;
     padding: 10px 0;
+    left: 12px;
 }
 .footer a{
     color: grey;
    
 }
 
+
+
 .library{
     min-height: 75vh;
     position: relative;
+    margin: 7px 4px;
+    padding: 10px 4px;
 }
 .nav{
     display: flex;
@@ -96,7 +101,11 @@ margin: 16px 0;
 
 }
 
-
+.library .heading{
+  position: relative;
+  left: 22px;
+  padding: 9px 0px;
+}
 
 .spotifyPalylist .card{
   width: 200px;
@@ -236,11 +245,12 @@ font-weight: bold;
 
 
   .playBar{
-    position: absolute;
+    position: fixed;
     bottom: 12px;
     background-color: green;
-    width: 92%;
+    width: 67.5vw;
     padding: 8px;
+    border-radius: 90px;
   }
 
 
@@ -250,27 +260,94 @@ font-weight: bold;
     gap: 12px;
   }
 
-  .songList ul{
-     padding: 10px 17px;
+  .songList ul {
+    padding: 10px;
+    list-style-type: none;
+}
+
+.songList ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sinfo {
+    flex-grow: 1;
+}
+
+.playNow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.playNow span {
+    padding: 5px 10px;
+    /* background-color: #007bff; */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+     .songList ul{
+     padding: 0px 10px;
   }
 
   .songList ul li{
     list-style-type: decimal;
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
-    gap: 25px;
+    gap: 10px;
     cursor: pointer;
-    padding: 12px 0px;
+    /* padding: 12px 0px; */
+    border: 1px solid white;
+    margin: 6px;
+    padding: 4px;
+    border-radius: 5px;
+    justify-content: space-between;
+
   }
   
   .playNow{
     display: flex;
 justify-content: center;
 align-items: center;
+gap: 0px;
   }
 
   .playNow span{
-    font-size: 15px;
+    font-size: 12px;
     width: 64px;
-    padding: 12px;
+    padding: 6px;
   }
+  .sinfo{
+    width: 344px;
+    font-size: 14px;
+  }
+  .songList{
+  max-height: 0px;
+ 
+}
+
+.songList {
+  max-height: 388px; /* Maximum height of the container */
+  overflow-y:auto; /* Show scrollbar only when content exceeds container height */
+}
+
+/* Customizing scrollbar track and thumb */
+.songList::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.songList::-webkit-scrollbar-track {
+  background: #1f1f1f; /* Scrollbar track color */
+}
+
+.songList::-webkit-scrollbar-thumb {
+  background-color: #4a4a4a; /* Scrollbar thumb color */
+  border-radius: 5px; /* Rounded corners for thumb */
+}
+
