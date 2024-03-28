@@ -15,8 +15,11 @@
     <div class="container flex bg-black">
 
         <div class="left">
+            <div class="closeSVG">
+                <img class="invert" src="svg/close.svg" alt="">
+            </div>
             <div class="home bg-grey rounded m-1 p-3">
-                <div class="logo"><img class="invert" src="svg/logo.svg" alt=""></div>
+                <div class="logo"><img class="invert" style="width: 133px;" src="svg/logo.svg" alt=""></div>
                 <ul class="p-11">
                     <li><img class="invert" src="svg/homeIcon.svg" alt="home"> Home </li>
                     <li><img class="invert" src="svg/search.svg" alt="search"> Search </li>
@@ -33,7 +36,7 @@
                 <div class="songList">
 
                     <ul>
-                        
+
                     </ul>
                 </div>
                 <div class="footer">
@@ -66,7 +69,10 @@
         </div>
         <div class="right bg-grey rounded m-1">
             <div class="header">
+                
+                
                 <div class="nav">
+                    <img class="invert hamburger" src="svg/hamburger.svg" alt="">
 
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
                         fill="none">
@@ -178,17 +184,24 @@
                 </div>
 
                 <div class="playBar">
+                    <div class="seekbar">
+                        <div class="circle">
 
-                    <div class="songinfo">
-
+                        </div>
                     </div>
-                    <div class="songButtons">
-                        <img src="svg/prevSong.svg" alt="">
-                        <img src="svg/play.svg" alt="">
-                        <img src="svg/nextSong.svg" alt="">
-                    </div>
-                    <div class="songTime">
 
+                    <div class="playBarConatiner">
+                        <div class="songinfo" style="display: flex; justify-content: center;">
+
+                        </div>
+                        <div class="songButtons">
+                            <img width="35" id="previous" src="svg/prevSong.svg" alt="">
+                            <img width="35" id="play" src="svg/play.svg" alt="">
+                            <img width="35" id="next" src="svg/nextSong.svg" alt="">
+                        </div>
+                        <div class="songTime">
+
+                        </div>
                     </div>
                 </div>
             </div>
